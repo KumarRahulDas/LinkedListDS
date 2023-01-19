@@ -109,6 +109,15 @@ public class LinkedList<T> {
         }
         return index;
     }
+    /**
+     * Method For search index by value and insert new data at next index.
+     * @param searchValue: Data to be searched.
+     * @param InsertValue: Data to be inserted.
+     */
+    public void searchAndInsert(T searchValue, T InsertValue){
+        int index = searchByValue(searchValue) + 1;
+        addAtIndex(index, InsertValue);
+    }
 
 
 }
