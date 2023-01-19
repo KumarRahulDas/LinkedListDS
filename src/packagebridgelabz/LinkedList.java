@@ -66,5 +66,14 @@ public class LinkedList<T> {
             node.next = newNode;
         }
     }
+    /**
+     * Method for removing the first element from the list.
+     */
+    public void pop() {
+        if (null != head) {
+            Node<T> newHead = head.next;
+            head = newHead;
+        }
+    }
 
 }
